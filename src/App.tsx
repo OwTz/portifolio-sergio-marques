@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import ServicesSection from './components/ServicesSection'
 import SkillsSection from './components/SkillsSection'
+import ProjectsSection from './components/ProjectsSection'
 import Footer from './components/Footer'
 
 function App() {
@@ -28,11 +29,12 @@ function App() {
         }}
       />
       
-      <div className="min-h-screen bg-gray-900 text-white">
+      <div className="min-h-screen bg-gray-900 text-white overflow-x-hidden">
         <Navbar />
         <HeroSection />
         <ServicesSection />
         <SkillsSection />
+        <ProjectsSection />
         <Footer />
       </div>
     </>

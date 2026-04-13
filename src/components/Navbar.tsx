@@ -10,7 +10,8 @@ const Navbar: React.FC = () => {
   const menuItems = [
     { label: 'Início', target: 'hero' },
     { label: 'Skills', target: 'skills' },
-    { label: 'Serviços', target: 'servicos' }
+    { label: 'Serviços', target: 'servicos' },
+    { label: 'Projetos', target: 'projetos' }
   ];
 
   const handleWhatsAppContact = () => {
