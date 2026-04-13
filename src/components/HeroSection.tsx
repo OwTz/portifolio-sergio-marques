@@ -2,7 +2,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ReactTyped } from 'react-typed';
-import { ChevronDown, Github, Linkedin, Mail, Instagram } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Mail, Instagram, Download } from 'lucide-react';
+import curriculum from '../assets/curriculum.pdf';
 
 const HeroSection: React.FC = () => {
   const socialLinks = [
@@ -92,13 +93,25 @@ aplicações web utilizando padrão RESTful, desenvolvimento de APIs robustas e 
               transition={{ delay: 1.6, duration: 0.6 }}
               className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center mt-8 md:mt-12 px-4"
             >
-              <motion.button
+              <motion.a
+                href="#projetos"
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 text-sm md:text-base"
+                className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 text-sm md:text-base text-center"
               >
                 Ver Meu Trabalho
-              </motion.button>
+              </motion.a>
+              
+              <motion.a
+                href={curriculum}
+                download="Curriculo_SergioMarques.pdf"
+                whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(168, 85, 247, 0.3)" }}
+                whileTap={{ scale: 0.95 }}
+                className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-purple-500 to-pink-600 text-white font-semibold rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 text-sm md:text-base text-center flex items-center justify-center gap-2"
+              >
+                <Download size={18} />
+                <span>Baixar Currículo</span>
+              </motion.a>
               
               <motion.a
                 href="https://www.linkedin.com/in/sergiomqs/"
