@@ -23,7 +23,7 @@ const projects: Project[] = [
     title: 'Site de Serviços',
     description: 'Site institucional para divulgação de serviços profissionais com apresentação visual atrativa.',
     technologies: ['PHP', 'WordPress', 'MySQL'],
-    link: 'https://sergiodev.gt.tc',
+    link: 'https://sergio-dev.gt.tc/',
     isExternal: true,
   },
   {

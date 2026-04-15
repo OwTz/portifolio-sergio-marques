@@ -6,7 +6,7 @@ const socialLinks = [
   { icon: Github, href: 'https://github.com/OwTz', label: 'GitHub' },
   { icon: Linkedin, href: 'https://www.linkedin.com/in/sergiomqs/', label: 'LinkedIn' },
   { icon: Mail, href: 'mailto:suporte.sergio244@gmail.com', label: 'Email' },
-  { icon: Instagram, href: 'https://www.instagram.com/m4rquesszx/', label: 'Instagram' },
+  { icon: Instagram, href: 'https://www.instagram.com/_.m4rquessz/', label: 'Instagram' },
 ];
 
 const Footer: React.FC = () => (
@@ -93,7 +93,7 @@ const Footer: React.FC = () => (
       {/* Copyright */}
       <div className="text-center text-xs md:text-sm text-gray-400 border-t border-gray-700 pt-6">
         <p>© {new Date().getFullYear()} Sérgio Marques. Todos os direitos reservados.</p>
-        <p className="mt-2">Desenvolvido com <span className="text-pink-400">♥</span> usando React, TypeScript e Tailwind CSS</p>
+        <p className="mt-2">Desenvolvido com o <span className="text-pink-400">♥</span> usando React, TypeScript e Tailwind CSS</p>
       </div>
     </div>
   </footer>
